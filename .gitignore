@@ -1,0 +1,4 @@
+.env
+src/shunit2/
+src/log.txt
+src/my.php

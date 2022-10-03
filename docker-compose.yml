@@ -1,0 +1,15 @@
+version: '3'
+services:
+  test-app:
+    tty: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: "${CONTAINER_NAME}"
+    image: "${IMAGE_NAME}"
+    volumes:
+      - ./src:/app
+    environment:
+      - "TZ=Asia/Tokyo"
+      - "BASIC_AUTH_USER=${BASIC_AUTH_USER}"
+      - "BASIC_AUTH_PASSWORD=${BASIC_AUTH_PASSWORD}"
