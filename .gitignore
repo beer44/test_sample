@@ -2,3 +2,5 @@
 src/shunit2/
 src/log.txt
 src/my.php
+
+__pycache__
